@@ -40,7 +40,7 @@ namespace Craft.Net.Server.Packets
                 .Concat(DataUtility.CreateInt64(0)) // TODO: What is this field for
                 .Concat(DataUtility.CreateInt64(Time))
                 .ToArray();
-            client.SendData(payload);
+            //client.SendData(payload);
         }
     }
 }

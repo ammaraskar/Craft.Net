@@ -35,15 +35,15 @@ namespace Craft.Net.Server.Packets
         {
             if (ProtocolVersion < MinecraftServer.ProtocolVersion)
             {
-                client.SendPacket(new DisconnectPacket("Outdated client!"));
-                server.ProcessSendQueue();
-                return;
+                //client.SendPacket(new DisconnectPacket("Outdated client!"));
+                //server.ProcessSendQueue();
+                //return;
             }
             if (ProtocolVersion > MinecraftServer.ProtocolVersion)
             {
-                client.SendPacket(new DisconnectPacket("Outdated server!"));
-                server.ProcessSendQueue();
-                return;
+                //client.SendPacket(new DisconnectPacket("Outdated server!"));
+                //server.ProcessSendQueue();
+                //return;
             }
             if (server.Clients.Count(c => c.Username == Username) != 0)
             {

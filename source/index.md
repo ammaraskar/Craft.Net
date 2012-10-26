@@ -4,7 +4,7 @@ layout: base
 ---
 
 Craft.Net is a collection of [.Net](http://en.wikipedia.org/wiki/.NET_Framework) libraries
-for working with Minecraft. It includes a 12w41b server, and tools for manipulating Anvil
+for working with Minecraft. It includes a 1.4.2 server, and tools for manipulating Anvil
 world saves, simulating block and entity interactions, and more.
 
 ## Getting Started

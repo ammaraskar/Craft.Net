@@ -4,7 +4,7 @@ layout: base
 ---
 
 Craft.Net is a collection of [.Net](http://en.wikipedia.org/wiki/.NET_Framework) libraries
-for working with Minecraft. It includes a 1.4.2 server, and tools for manipulating Anvil
+for working with Minecraft. It includes a 1.4.4 server, and tools for manipulating Anvil
 world saves, simulating block and entity interactions, and more.
 
 ## Getting Started
@@ -21,7 +21,7 @@ If you want to manipulate an Anvil world, that's also pretty easy. Here's an exa
 changing the block at &lt;0, 0, 0&gt; in the "example" world of the user's machine:
 
     var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-        ".minecraft", "example");
+        ".minecraft", "worlds", "example");
     Level level = new Level(path);
     level.World.SetBlock(Vector3.Zero, new GoldBlock());
     level.Save();

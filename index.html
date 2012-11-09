@@ -33,7 +33,7 @@
 			<div id="rss-feed"><a href="/Craft.Net/feed"><img src="/Craft.Net/images/rss.png" alt="rss" /></a></div>
             <div id="content">
                 <h1>Craft&#46;Net</h1>
-                <p>Craft.Net is a collection of <a href='http://en.wikipedia.org/wiki/.NET_Framework'>.Net</a> libraries for working with Minecraft. It includes a 1.4.2 server, and tools for manipulating Anvil world saves, simulating block and entity interactions, and more.</p>
+                <p>Craft.Net is a collection of <a href='http://en.wikipedia.org/wiki/.NET_Framework'>.Net</a> libraries for working with Minecraft. It includes a 1.4.4 server, and tools for manipulating Anvil world saves, simulating block and entity interactions, and more.</p>
 
 <h2 id='getting_started'>Getting Started</h2>
 
@@ -48,7 +48,7 @@ server.Stop();</code></pre>
 <p>If you want to manipulate an Anvil world, that&#8217;s also pretty easy. Here&#8217;s an example of changing the block at &#60;0, 0, 0&#62; in the &#8220;example&#8221; world of the user&#8217;s machine:</p>
 
 <pre><code>var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-    &quot;.minecraft&quot;, &quot;example&quot;);
+    &quot;.minecraft&quot;, &quot;worlds&quot;, &quot;example&quot;);
 Level level = new Level(path);
 level.World.SetBlock(Vector3.Zero, new GoldBlock());
 level.Save();</code></pre>
